@@ -8,22 +8,19 @@
 </head>
 <body>
 <div> 
-    <h1>PHP</h1>
     <link href="estilo.css" rel ="stylesheet">
- 
     <?php
 
-   echo  " <h2> Bem vindo ao curso de PHP! </h2>" ;
-  //  Assuntos abaixo aula 4 ( lidos variaves e concatenções
-   
-   $n=4;
-   
-    $nome= "Autor: Tião Silva Neto";
+    echo "<h1> Bem vindo ao Curso de PHP!</h1>";
+    echo "<h3> Participante Sebastião da Silva Neto </h3>";
+   /* tiulos e nomes com referencias em variaveis
+    $nome= "  Participante: Sebastião da Silva Neto  " ;
     $idade= 30;
+    $titulo= "Bem vindo ao curso de PHP!";
+    echo "<h1> $titulo </h1>";
+    echo "<h3> $nome , $idade anos! </h3>"; 
     
-    echo "$nome , $idade anos!"; 
-    
-/*
+
     $n1 = 7;
     $n2 = 2;
     $n6 = 5.4;
@@ -72,8 +69,21 @@ echo "<br>";
     $preco1 -= $preco1*10/100;
     echo "<br> O valor do produto com desconto de 10% é de: ".number_format($preco1,2);
 
+    Exercicios Aula 7 Operadores Relacionais:
+    1) Permitir que o usuario escolha entre somar e multiplicar 2 numeros ( valores setaados na URL).
 
-*/
+    $n1 = $_GET ["a"];
+    $n2 = $_GET["b"];
+   //$tipo = $_GET ["op"];
+    // $r = ($tipo == "s") ? $n1 + $n2 : $n1 * $n2; Calculo de comparacoes
+    //echo "Os valores da soma e : $r ";
+    // Exercicios 2 somar a media de um aluno e a situação
+    $media = ($n1+ $n2)/2;
+    echo "A média do Aluno foi: " , $media, " <br/> O Aluno está: ".(($media<6)? "<h3>REPROVADO</h3>":"<h3>APROVADO</h3>");
+    
+    Ligação formulário HTML PHP, integração HTML5 com PHP via formulário.
+    */
+
 
 
     ?>

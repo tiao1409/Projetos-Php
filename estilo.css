@@ -6,15 +6,10 @@
             color: rgb(119, 0, 255);
             text-decoration: underline; 
         }
+        h3{
+            color: rgb(255, 0, 0);
+        }
       body{
           text-align: center;
       }
-      .hello-world{
-          width: 200px;
-          margin: auto;
-          text-align: left;
-      }
-      input{
-          margin-top: 10px;
-          margin-bottom:10px;
-      }
+      
